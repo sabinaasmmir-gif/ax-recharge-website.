@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AX RECHARGE — Mobile, DTH &amp; Utility Bill Portal</title>
+    <meta
+      name="description"
+      content="AX RECHARGE is a clean, transparent web portal for upcoming mobile recharge, DTH recharge, and electricity, water, and gas bill payment services."
+    />
+    <meta property="og:title" content="AX RECHARGE — Mobile, DTH &amp; Utility Bill Portal" />
+    <meta
+      property="og:description"
+      content="Explore planned mobile recharge, DTH, and utility bill payment services, transparent policies, and support channels on AX RECHARGE."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Top Navigation Bar (3-Zone Contract) -->
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a href="#home" class="brand-lockup" aria-label="AX RECHARGE Home">
+          <svg
+            class="brand-mark"
+            width="36"
+            height="36"
+            viewBox="0 0 36 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <rect width="36" height="36" rx="9" fill="url(#axBrandGrad)" />
+            <path
+              d="M9.5 25L14.3 11H17.3L22.1 25H19.1L18.1 21.8H13.5L12.5 25H9.5ZM14.2 19.3H17.4L15.8 14.1L14.2 19.3Z"
+              fill="#FFFFFF"
+            />
+            <path
+              d="M21.4 11H24.6L26.2 15.2L27.9 11H30.9L27.8 17.8L31.1 25H27.9L26 20.4L24.1 25H21.1L24.4 17.8L21.4 11Z"
+              fill="#BFDBFE"
+            />
+            <defs>
+              <linearGradient id="axBrandGrad" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#1E40AF" />
+                <stop offset="1" stop-color="#2563EB" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="brand-name">AX RECHARGE</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary Navigation">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#about" class="nav-link">About Us</a>
+          <a href="#policies" class="nav-link">Policies</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="#contact" class="btn btn-primary btn-sm header-cta">Contact Support</a>
+          <button
+            type="button"
+            class="mobile-menu-btn"
+            id="mobileMenuToggle"
+            aria-expanded="false"
+            aria-controls="mobileNavDrawer"
+            aria-label="Open navigation menu"
+          >
+            <svg class="icon-menu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+            <svg class="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div class="mobile-drawer" id="mobileNavDrawer" hidden>
+        <nav class="container mobile-drawer-inner" aria-label="Mobile Navigation">
+          <div class="mobile-nav-group">
+            <p class="mobile-nav-heading">Overview</p>
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About Us</a>
+            <a href="#contact" class="mobile-nav-link">Contact Us</a>
+          </div>
+          <div class="mobile-nav-group">
+            <p class="mobile-nav-heading">Planned Services</p>
+            <a href="#mobile-recharge" class="mobile-nav-link">Mobile Recharge</a>
+            <a href="#dth-recharge" class="mobile-nav-link">DTH Recharge</a>
+            <a href="#electricity-bills" class="mobile-nav-link">Electricity Bills</a>
+            <a href="#water-bills" class="mobile-nav-link">Water Bills</a>
+            <a href="#gas-bills" class="mobile-nav-link">Gas Bills</a>
+          </div>
+          <div class="mobile-nav-group">
+            <p class="mobile-nav-heading">Legal &amp; Support</p>
+            <a href="#privacy-policy" class="mobile-nav-link">Privacy Policy</a>
+            <a href="#terms-conditions" class="mobile-nav-link">Terms and Conditions</a>
+            <a href="#refund-policy" class="mobile-nav-link">Refund &amp; Cancellation Policy</a>
+            <a href="#grievance-support" class="mobile-nav-link">Grievance &amp; Customer Support</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- 1. HOME / HERO SECTION -->
+      <section id="home" class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="section-kicker">Utility &amp; Recharge Information Portal · Pre-Launch Preview</p>
+            <h1 class="hero-title">
+              Clear, dependable mobile recharge and utility bill management.
+            </h1>
+            <p class="hero-subtitle">
+              AX RECHARGE is a web platform being built for everyday prepaid mobile recharges, DTH top-ups, and electricity, water, and gas bill lookups with transparent fees and clear status tracking.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#services" class="btn btn-primary">Explore Planned Services</a>
+              <a href="#about" class="btn btn-secondary">Platform &amp; Compliance Info</a>
+            </div>
+
+            <div class="notice-box" role="note" aria-label="Service Development Notice">
+              <svg class="notice-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="16" x2="12" y2="12" />
+                <line x1="12" y1="8" x2="12.01" y2="8" />
+              </svg>
+              <div class="notice-content">
+                <p class="notice-title">Services Under Development</p>
+                <p class="notice-text">
+                  Recharge and bill payment processing is currently disabled while authorized telecom, utility, and payment providers are being connected. Do not enter UPI PINs, OTPs, passwords, or card details anywhere on this site.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Non-Transactional Service Estimator -->
+          <div class="preview-card" aria-labelledby="previewCardTitle">
+            <div class="preview-header">
+              <div>
+                <h2 id="previewCardTitle" class="preview-title">Service Workflow Preview</h2>
+                <p class="preview-meta">Non-transactional demonstration · No live payment</p>
+              </div>
+            </div>
+
+            <div class="segmented-tabs" role="tablist" aria-label="Select service preview">
+              <button type="button" class="tab-btn is-active" role="tab" aria-selected="true" data-service-tab="mobile">Mobile</button>
+              <button type="button" class="tab-btn" role="tab" aria-selected="false" data-service-tab="dth">DTH</button>
+              <button type="button" class="tab-btn" role="tab" aria-selected="false" data-service-tab="electricity">Electricity</button>
+              <button type="button" class="tab-btn" role="tab" aria-selected="false" data-service-tab="water">Water</button>
+              <button type="button" class="tab-btn" role="tab" aria-selected="false" data-service-tab="gas">Gas</button>
+            </div>
+
+            <form id="servicePreviewForm" class="preview-form" novalidate>
+              <div class="form-field">
+                <label for="previewProvider" id="previewProviderLabel" class="field-label">
+                  Sample Operator Category (Placeholder)
+                </label>
+                <select id="previewProvider" class="field-input" required>
+                  <!-- Populated dynamically by app.js -->
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="previewIdentifier" id="previewIdentifierLabel" class="field-label">
+                  Sample 10-Digit Mobile Number
+                </label>
+                <input
+                  type="text"
+                  id="previewIdentifier"
+                  class="field-input mono-input"
+                  placeholder="e.g. 9876543210 (demo only)"
+                  autocomplete="off"
+                />
+                <p class="field-hint" id="previewIdentifierHint">
+                  Format check only. Data is not transmitted or stored.
+                </p>
+              </div>
+
+              <div class="form-field">
+                <label for="previewAmount" class="field-label">Illustrative Amount (INR)</label>
+                <div class="amount-row">
+                  <input
+                    type="number"
+                    id="previewAmount"
+                    class="field-input mono-input"
+                    min="10"
+                    max="50000"
+                    value="299"
+                  />
+                  <div class="quick-amounts" id="quickAmounts">
+                    <button type="button" class="quick-amt-btn" data-amount="199">₹199</button>
+                    <button type="button" class="quick-amt-btn" data-amount="299">₹299</button>
+                    <button type="button" class="quick-amt-btn" data-amount="599">₹599</button>
+                  </div>
+                </div>
+              </div>
+
+              <div id="previewFeedback" class="preview-result" hidden aria-live="polite"></div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                Preview Planned Breakdown
+              </button>
+
+              <p class="security-footnote">
+                Security guarantee: AX RECHARGE never asks for UPI PIN, OTP, net-banking password, or card details on this preview portal.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. ABOUT US SECTION -->
+      <section id="about" class="section section-tinted">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker">About AX RECHARGE</p>
+            <h2 class="section-title">Built for straightforward utility payments and honest disclosure</h2>
+            <p class="section-subtitle">
+              AX RECHARGE is designed to bring mobile, DTH, and household bill workflows together in a fast, uncluttered web interface. Until official provider agreements and technical integrations are finalized, this website operates strictly as an informational portal.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-principles">
+              <div class="principle-item">
+                <h3 class="principle-title">01. Provider-Backed Integration First</h3>
+                <p class="principle-text">
+                  No live recharge or utility bill payment will be accepted until authorized payment gateways, telecom aggregators, or Bharat Bill Payment System (BBPS) operating units are formally connected and verified.
+                </p>
+              </div>
+              <div class="principle-item">
+                <h3 class="principle-title">02. Zero Credential Collection</h3>
+                <p class="principle-text">
+                  AX RECHARGE never requests or stores UPI PINs, banking passwords, one-time passwords (OTPs), CVVs, or card numbers. Future checkout flows will redirect strictly through authorized payment rails.
+                </p>
+              </div>
+              <div class="principle-item">
+                <h3 class="principle-title">03. Transparent Business Identity</h3>
+                <p class="principle-text">
+                  We publish clear placeholders wherever legal registration, tax identifiers, or physical office records are pending finalization, rather than displaying unverified numbers or fabricated testimonials.
+                </p>
+              </div>
+            </div>
+
+            <div class="disclosure-card">
+              <h3 class="disclosure-heading">Business &amp; Compliance Disclosures</h3>
+              <p class="disclosure-intro">
+                Official registration and partner details will replace the placeholders below before commercial launch.
+              </p>
+              <dl class="disclosure-list">
+                <div class="disclosure-row">
+                  <dt>Platform Name</dt>
+                  <dd>AX RECHARGE</dd>
+                </div>
+                <div class="disclosure-row">
+                  <dt>Current Operating Status</dt>
+                  <dd>Under Development (Non-Transactional Informational Portal)</dd>
+                </div>
+                <div class="disclosure-row">
+                  <dt>Aggregator / Telecom Claim</dt>
+                  <dd>Not an authorized payment aggregator or telecom partner</dd>
+                </div>
+                <div class="disclosure-row">
+                  <dt>Legal Entity Name</dt>
+                  <dd class="placeholder-value">[Legal Entity / Proprietor Name — Placeholder]</dd>
+                </div>
+                <div class="disclosure-row">
+                  <dt>Registration / CIN</dt>
+                  <dd class="placeholder-value">[Business Registration / CIN — Placeholder]</dd>
+                </div>
+                <div class="disclosure-row">
+                  <dt>GSTIN</dt>
+                  <dd class="placeholder-value">[GSTIN — Pending / Placeholder]</dd>
+                </div>
+                <div class="disclosure-row">
+                  <dt>Registered Address</dt>
+                  <dd class="placeholder-value">[Complete Street Address, City, State, PIN — Placeholder]</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3–7. PLANNED SERVICES SECTIONS -->
+      <section id="services" class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker">Planned Utility Categories</p>
+            <h2 class="section-title">Five core recharge and bill payment modules</h2>
+            <p class="section-subtitle">
+              Each module below outlines the intended customer workflow and identifier requirements. All modules remain in pre-launch development until authorized service providers are connected.
+            </p>
+          </div>
+
+          <div class="services-bento">
+            <!-- 3. Mobile Recharge -->
+            <article id="mobile-recharge" class="service-card service-card-wide">
+              <div class="service-card-top">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                    <line x1="12" y1="18" x2="12.01" y2="18" />
+                  </svg>
+                </div>
+                <span class="service-index">01 · Mobile Recharge</span>
+              </div>
+              <h3 class="service-title">Prepaid Mobile Recharge</h3>
+              <p class="service-desc">
+                Designed for quick 10-digit prepaid number lookup, telecom circle identification, and transparent plan comparison across data, talktime, and validity packs once authorized telecom APIs are connected.
+              </p>
+              <div class="service-specs">
+                <span>Required input: 10-digit mobile number</span>
+                <span aria-hidden="true">·</span>
+                <span>Status: Under Development</span>
+              </div>
+              <div class="service-footer">
+                <button type="button" class="btn-link try-preview-btn" data-select-service="mobile">
+                  Test Mobile Workflow Preview →
+                </button>
+              </div>
+            </article>
+
+            <!-- 4. DTH Recharge -->
+            <article id="dth-recharge" class="service-card service-card-wide">
+              <div class="service-card-top">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="15" rx="2" ry="2" />
+                    <polyline points="17 2 12 7 7 2" />
+                  </svg>
+                </div>
+                <span class="service-index">02 · DTH Recharge</span>
+              </div>
+              <h3 class="service-title">Direct-to-Home (DTH) Top-Ups</h3>
+              <p class="service-desc">
+                Planned support for monthly and annual DTH subscription renewals using your Subscriber ID or Registered Mobile Number, with clear validity summaries before checkout.
+              </p>
+              <div class="service-specs">
+                <span>Required input: Subscriber / Customer ID</span>
+                <span aria-hidden="true">·</span>
+                <span>Status: Under Development</span>
+              </div>
+              <div class="service-footer">
+                <button type="button" class="btn-link try-preview-btn" data-select-service="dth">
+                  Test DTH Workflow Preview →
+                </button>
+              </div>
+            </article>
+
+            <!-- 5. Electricity Bills -->
+            <article id="electricity-bills" class="service-card">
+              <div class="service-card-top">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                  </svg>
+                </div>
+                <span class="service-index">03 · Electricity Bills</span>
+              </div>
+              <h3 class="service-title">Electricity Bill Payments</h3>
+              <p class="service-desc">
+                Planned integration for state and private power distribution boards to fetch exact billed amounts, consumer names, and due dates prior to confirmation.
+              </p>
+              <div class="service-specs">
+                <span>Input: Consumer / CA Number</span>
+                <span aria-hidden="true">·</span>
+                <span>Status: Under Development</span>
+              </div>
+              <div class="service-footer">
+                <button type="button" class="btn-link try-preview-btn" data-select-service="electricity">
+                  Test Electricity Preview →
+                </button>
+              </div>
+            </article>
+
+            <!-- 6. Water Bills -->
+            <article id="water-bills" class="service-card">
+              <div class="service-card-top">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+                  </svg>
+                </div>
+                <span class="service-index">04 · Water Bills</span>
+              </div>
+              <h3 class="service-title">Municipal Water Bills</h3>
+              <p class="service-desc">
+                Intended for municipal water supply authorities and housing boards, enabling K-number or connection ID bill verification and downloadable payment receipts.
+              </p>
+              <div class="service-specs">
+                <span>Input: K-Number / Connection ID</span>
+                <span aria-hidden="true">·</span>
+                <span>Status: Under Development</span>
+              </div>
+              <div class="service-footer">
+                <button type="button" class="btn-link try-preview-btn" data-select-service="water">
+                  Test Water Preview →
+                </button>
+              </div>
+            </article>
+
+            <!-- 7. Gas Bills -->
+            <article id="gas-bills" class="service-card">
+              <div class="service-card-top">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" />
+                  </svg>
+                </div>
+                <span class="service-index">05 · Gas Bills</span>
+              </div>
+              <h3 class="service-title">Piped Gas &amp; Utility Bills</h3>
+              <p class="service-desc">
+                Planned support for Piped Natural Gas (PNG) billing statements and authorized distributor reference checks using your customer BP number.
+              </p>
+              <div class="service-specs">
+                <span>Input: Customer / BP Number</span>
+                <span aria-hidden="true">·</span>
+                <span>Status: Under Development</span>
+              </div>
+              <div class="service-footer">
+                <button type="button" class="btn-link try-preview-btn" data-select-service="gas">
+                  Test Gas Preview →
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. CONTACT US SECTION -->
+      <section id="contact" class="section section-tinted">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker">Contact Us</p>
+            <h2 class="section-title">Reach the AX RECHARGE team</h2>
+            <p class="section-subtitle">
+              Questions regarding upcoming utility integrations, partnership onboarding, or website policies can be submitted below or routed to our placeholder contact channels.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-details-card">
+              <h3 class="card-heading">Official Contact Channels</h3>
+              <p class="card-copy">
+                Verified phone numbers and corporate email addresses will be published here prior to live payment launch.
+              </p>
+
+              <dl class="contact-dl">
+                <div class="contact-row">
+                  <dt>Support Email</dt>
+                  <dd class="placeholder-value">[support@axrecharge.example — Placeholder]</dd>
+                </div>
+                <div class="contact-row">
+                  <dt>Support Phone</dt>
+                  <dd class="placeholder-value">[+91-XXXXXXXXXX — Placeholder]</dd>
+                </div>
+                <div class="contact-row">
+                  <dt>Business Hours</dt>
+                  <dd class="placeholder-value">[Monday – Saturday, 10:00 – 18:00 IST — Placeholder]</dd>
+                </div>
+                <div class="contact-row">
+                  <dt>Office Address</dt>
+                  <dd class="placeholder-value">[Registered Office Address — Placeholder]</dd>
+                </div>
+              </dl>
+
+              <div class="security-reminder">
+                <strong>Important Security Notice:</strong> AX RECHARGE staff will never call, message, or email asking for your UPI PIN, OTP, ATM/card number, CVV, or banking password.
+              </div>
+            </div>
+
+            <div class="contact-form-card">
+              <h3 class="card-heading">Send an Inquiry</h3>
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-row-2">
+                  <div class="form-field">
+                    <label for="contactName" class="field-label">Full Name</label>
+                    <input
+                      type="text"
+                      id="contactName"
+                      name="name"
+                      class="field-input"
+                      placeholder="Your name"
+                      required
+                    />
+                  </div>
+                  <div class="form-field">
+                    <label for="contactEmail" class="field-label">Email Address</label>
+                    <input
+                      type="email"
+                      id="contactEmail"
+                      name="email"
+                      class="field-input"
+                      placeholder="you@example.com"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label for="contactTopic" class="field-label">Inquiry Topic</label>
+                  <select id="contactTopic" name="topic" class="field-input">
+                    <option value="General Inquiry">General Platform Inquiry</option>
+                    <option value="Service Availability">Service Availability &amp; Launch Updates</option>
+                    <option value="Provider Partnership">Authorized Provider / BBPS Partnership</option>
+                    <option value="Privacy or Legal">Privacy, Legal or Grievance Inquiry</option>
+                  </select>
+                </div>
+
+                <div class="form-field">
+                  <label for="contactMessage" class="field-label">Message</label>
+                  <textarea
+                    id="contactMessage"
+                    name="message"
+                    rows="4"
+                    class="field-input"
+                    placeholder="Write your question here. Do not include UPI PINs, OTPs, passwords, or card details."
+                    required
+                  ></textarea>
+                </div>
+
+                <div id="contactFormStatus" class="form-status" hidden aria-live="polite"></div>
+
+                <button type="submit" class="btn btn-primary">Validate &amp; Preview Inquiry</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9–12. POLICIES & GRIEVANCE SECTION -->
+      <section id="policies" class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker">Policies &amp; Governance</p>
+            <h2 class="section-title">Privacy, Terms, Refunds &amp; Grievance Redressal</h2>
+            <p class="section-subtitle">
+              Clear policy commitments governing this pre-launch portal and our planned utility transaction framework.
+            </p>
+          </div>
+
+          <div class="policy-filter-bar" role="group" aria-label="Filter policy sections">
+            <button type="button" class="filter-btn is-active" data-policy-filter="all">All Policies</button>
+            <button type="button" class="filter-btn" data-policy-filter="privacy-policy">Privacy Policy</button>
+            <button type="button" class="filter-btn" data-policy-filter="terms-conditions">Terms &amp; Conditions</button>
+            <button type="button" class="filter-btn" data-policy-filter="refund-policy">Refund &amp; Cancellation</button>
+            <button type="button" class="filter-btn" data-policy-filter="grievance-support">Grievance &amp; Support</button>
+          </div>
+
+          <div class="policies-stack">
+            <!-- 9. Privacy Policy -->
+            <article id="privacy-policy" class="policy-card" data-policy-card="privacy-policy">
+              <div class="policy-header">
+                <span class="policy-number">01</span>
+                <div>
+                  <h3 class="policy-title">Privacy Policy</h3>
+                  <p class="policy-updated">Pre-Launch Static Edition · Effective Date: [Date — Placeholder]</p>
+                </div>
+              </div>
+              <div class="policy-body">
+                <p>
+                  <strong>1. Current Static Website Scope:</strong> This website is currently a static informational portal for AX RECHARGE. Form interactions (such as the service workflow preview and contact inquiry validator) execute locally in your browser and do not process financial transactions.
+                </p>
+                <p>
+                  <strong>2. Strict Non-Collection of Sensitive Financial Credentials:</strong> AX RECHARGE never collects, requests, or stores UPI PINs, one-time passwords (OTPs), banking passwords, ATM PINs, CVV codes, or full payment card numbers.
+                </p>
+                <p>
+                  <strong>3. Planned Operational Data:</strong> Once authorized telecom, utility, and payment aggregator partners are integrated, necessary transaction identifiers (such as mobile number, DTH subscriber ID, utility consumer number, and transaction reference ID) will only be processed to fulfill requested bill or recharge instructions in compliance with applicable data protection laws.
+                </p>
+                <p>
+                  <strong>4. Contact for Privacy Requests:</strong> Questions regarding data handling may be directed to <span class="placeholder-value">[privacy@axrecharge.example — Placeholder]</span>.
+                </p>
+              </div>
+            </article>
+
+            <!-- 10. Terms and Conditions -->
+            <article id="terms-conditions" class="policy-card" data-policy-card="terms-conditions">
+              <div class="policy-header">
+                <span class="policy-number">02</span>
+                <div>
+                  <h3 class="policy-title">Terms and Conditions</h3>
+                  <p class="policy-updated">Informational Portal Terms · Jurisdiction: [City, State — Placeholder]</p>
+                </div>
+              </div>
+              <div class="policy-body">
+                <p>
+                  <strong>1. Pre-Launch Development Notice:</strong> All recharge and utility bill payment services described on AX RECHARGE are currently under development. Nothing on this website constitutes a live financial service, telecom partnership claim, or authorized payment aggregator offering.
+                </p>
+                <p>
+                  <strong>2. Illustrative Previews:</strong> Any amounts, operator categories, or workflow previews displayed on the site are illustrative only and do not represent live operator tariffs or confirmed bill balances.
+                </p>
+                <p>
+                  <strong>3. Third-Party Provider Dependencies:</strong> When live services launch, bill fetch and recharge fulfillment will depend on authorized payment partners, telecom operators, and utility boards. AX RECHARGE will publish updated operational terms prior to enabling live payments.
+                </p>
+                <p>
+                  <strong>4. Governing Law &amp; Entity:</strong> Operated by <span class="placeholder-value">[Legal Entity Name — Placeholder]</span>, subject to the jurisdiction of courts in <span class="placeholder-value">[City, State — Placeholder]</span>.
+                </p>
+              </div>
+            </article>
+
+            <!-- 11. Refund and Cancellation Policy -->
+            <article id="refund-policy" class="policy-card" data-policy-card="refund-policy">
+              <div class="policy-header">
+                <span class="policy-number">03</span>
+                <div>
+                  <h3 class="policy-title">Refund and Cancellation Policy</h3>
+                  <p class="policy-updated">Transaction Reversal Framework · Pending Live Provider Launch</p>
+                </div>
+              </div>
+              <div class="policy-body">
+                <p>
+                  <strong>1. No Active Payments Collected:</strong> Because AX RECHARGE services are currently under development, no user funds, fees, or bill payments are accepted through this website at this time.
+                </p>
+                <p>
+                  <strong>2. Intended Recharge Finality:</strong> Once live operations commence with authorized providers, completed prepaid mobile and DTH recharges transmitted to an operator generally cannot be cancelled or reversed after fulfillment.
+                </p>
+                <p>
+                  <strong>3. Failed or Pending Transactions:</strong> For future live transactions where funds are debited but the recharge or bill settlement fails at the provider end, refunds will be routed automatically back to the original payment source through the authorized payment partner within standard banking settlement timelines (<span class="placeholder-value">[5–7 business days — subject to partner SLA]</span>).
+                </p>
+                <p>
+                  <strong>4. Support Escalation:</strong> Any future discrepancy may be reported with the transaction reference number to <span class="placeholder-value">[support@axrecharge.example — Placeholder]</span>.
+                </p>
+              </div>
+            </article>
+
+            <!-- 12. Grievance and Customer Support -->
+            <article id="grievance-support" class="policy-card" data-policy-card="grievance-support">
+              <div class="policy-header">
+                <span class="policy-number">04</span>
+                <div>
+                  <h3 class="policy-title">Grievance and Customer Support</h3>
+                  <p class="policy-updated">Escalation &amp; Redressal Channels · Details Pending Finalization</p>
+                </div>
+              </div>
+              <div class="policy-body">
+                <p>
+                  <strong>Level 1 — Customer Support Desk:</strong> For general inquiries or future transaction assistance, contact <span class="placeholder-value">[support@axrecharge.example — Placeholder]</span> or <span class="placeholder-value">[+91-XXXXXXXXXX — Placeholder]</span> during <span class="placeholder-value">[Monday – Saturday, 10:00 – 18:00 IST — Placeholder]</span>.
+                </p>
+                <p>
+                  <strong>Level 2 — Grievance Redressal Officer:</strong> If an issue remains unresolved after initial support review, escalate to:
+                </p>
+                <ul class="grievance-list">
+                  <li><strong>Officer Name:</strong> <span class="placeholder-value">[Grievance Officer Name — Placeholder]</span></li>
+                  <li><strong>Grievance Email:</strong> <span class="placeholder-value">[grievance@axrecharge.example — Placeholder]</span></li>
+                  <li><strong>Postal Address:</strong> <span class="placeholder-value">[Registered Office Address — Placeholder]</span></li>
+                  <li><strong>Target Response Window:</strong> <span class="placeholder-value">[Within 48 business hours — Placeholder]</span></li>
+                </ul>
+                <p>
+                  <strong>Customer Safety Advisory:</strong> Never share OTPs, UPI PINs, CVVs, or passwords when submitting a support ticket or grievance inquiry.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Quiet Professional Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="brand-lockup">
+            <svg
+              class="brand-mark"
+              width="32"
+              height="32"
+              viewBox="0 0 36 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <rect width="36" height="36" rx="9" fill="#1E40AF" />
+              <path
+                d="M9.5 25L14.3 11H17.3L22.1 25H19.1L18.1 21.8H13.5L12.5 25H9.5ZM14.2 19.3H17.4L15.8 14.1L14.2 19.3Z"
+                fill="#FFFFFF"
+              />
+              <path
+                d="M21.4 11H24.6L26.2 15.2L27.9 11H30.9L27.8 17.8L31.1 25H27.9L26 20.4L24.1 25H21.1L24.4 17.8L21.4 11Z"
+                fill="#BFDBFE"
+              />
+            </svg>
+            <span class="brand-name">AX RECHARGE</span>
+          </a>
+          <p class="footer-summary">
+            Utility recharge and household bill information portal. Recharge and payment services remain under development until authorized providers are connected.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">Services</h3>
+          <ul class="footer-links">
+            <li><a href="#mobile-recharge">Mobile Recharge</a></li>
+            <li><a href="#dth-recharge">DTH Recharge</a></li>
+            <li><a href="#electricity-bills">Electricity Bills</a></li>
+            <li><a href="#water-bills">Water Bills</a></li>
+            <li><a href="#gas-bills">Gas Bills</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">Company</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">Policies &amp; Support</h3>
+          <ul class="footer-links">
+            <li><a href="#privacy-policy">Privacy Policy</a></li>
+            <li><a href="#terms-conditions">Terms and Conditions</a></li>
+            <li><a href="#refund-policy">Refund &amp; Cancellation</a></li>
+            <li><a href="#grievance-support">Grievance &amp; Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p class="footer-legal">
+          &copy; <span id="currentYear">2026</span> AX RECHARGE · <span class="placeholder-value">[Legal Entity Name — Placeholder]</span>
+        </p>
+        <p class="footer-legal">
+          Informational portal only · Not an authorized payment aggregator or telecom partner
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
